@@ -1,0 +1,39 @@
+name: Reliability experiment
+description: Plan or run a reproducible reliability experiment
+title: "[Experiment]: "
+body:
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis and comparison
+      description: Falsifiable expectation, baseline and control variables.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: System and environment
+      description: Code version, deployment, hardware, resources, dataset and traffic generator.
+    validations:
+      required: true
+  - type: textarea
+    id: fault
+    attributes:
+      label: Workload and fault
+      description: Arrival rate, duration, failure or release mechanism, stop condition.
+    validations:
+      required: true
+  - type: textarea
+    id: measurement
+    attributes:
+      label: Metrics and correctness checks
+      description: Latency, errors, saturation, business invariants and telemetry links.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Results and evidence (complete after run)
+      description: Results, limitations, raw data, reports and repeatability notes.
+    validations:
+      required: false

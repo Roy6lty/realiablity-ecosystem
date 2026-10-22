@@ -1,0 +1,34 @@
+name: Engineering task
+description: Implement a bounded component, reliability improvement or documentation change
+title: "[Task]: "
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: What problem are we solving and why?
+      placeholder: A single clear outcome.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and constraints
+      description: Modules affected, dependencies, non-goals and risks.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Verifiable behavior, tests and documentation updates.
+      placeholder: "- [ ] The requested behavior is tested\n- [ ] Evidence is linked"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence (fill before closing)
+      description: PR, CI run, commit SHA, test commands/results or experiment report.
+    validations:
+      required: false
